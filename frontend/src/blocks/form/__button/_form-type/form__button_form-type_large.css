@@ -1,0 +1,9 @@
+.form__button_form-type_large {
+  margin-top: 216px;
+}
+@media screen and (max-width: 610px) {
+  .form__button_form-type_large {
+    margin-top: 173px;
+    font-size: 16px;
+  }
+}

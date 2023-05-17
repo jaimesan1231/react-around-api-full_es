@@ -1,0 +1,6 @@
+@media screen and (max-width: 610px) {
+  .form__title_form-type_large {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+}

@@ -1,0 +1,89 @@
+@import url("./vendor/normalize.css");
+
+/* @import url("./fonts/InterWeb/inter.css"); */
+
+@import url("./blocks/page/page.css");
+
+@import url("./blocks/header/header.css");
+@import url("./blocks/header/__logo/header__logo.css");
+@import url("./blocks/header/__email/header__email.css");
+@import url("./blocks/header/__user-info/header__user-info.css");
+@import url("./blocks/header/__link/header__link.css");
+@import url("./blocks/header/__logout/header__logout.css");
+@import url("./blocks/header/__menu-icon/header__menu-icon.css");
+@import url("./blocks/header/_opened/header_opened.css");
+@import url("./blocks/header/__user-info/_opened/header__user-info_opened.css");
+@import url("./blocks/header/__close-icon/header__close-icon.css");
+
+@import url("./blocks/profile/profile.css");
+@import url("./blocks/profile/__avatar-container/profile__avatar-container.css");
+@import url("./blocks/profile/__avatar/profile__avatar.css");
+@import url("./blocks/profile/__info/profile__info.css");
+@import url("./blocks/profile/__name/profile__name.css");
+@import url("./blocks/profile/__edit-button/profile__edit-button.css");
+@import url("./blocks/profile/__description/profile__description.css");
+@import url("./blocks/profile/__add-button/profile__add-button.css");
+
+@import url("./blocks/cards-container/cards-container.css");
+
+@import url("./blocks/card/card.css");
+@import url("./blocks/card/__image/card__image.css");
+@import url("./blocks/card/__footer/card__footer.css");
+@import url("./blocks/card/__title/card__title.css");
+@import url("./blocks/card/__like-container/card__like-container.css");
+@import url("./blocks/card/__like-icon/card__like-icon.css");
+@import url("./blocks/card/__like-number/card__like-number.css");
+@import url("./blocks/card/__like-number/_visible/card__like-number_visible.css");
+@import url("./blocks/card/__like-icon/_active/card__like-icon_active.css");
+@import url("./blocks/card/__delete-icon/card__delete-icon.css");
+@import url("./blocks/card/__delete-icon/_visible/card__delete-icon_visible.css");
+
+@import url("./blocks/popup/popup.css");
+@import url("./blocks/popup/__container/popup__container.css");
+@import url("./blocks/popup/__close-icon/popup__close-icon.css");
+@import url("./blocks/popup/__close-icon/_place/popup__close-icon_place_center.css");
+@import url("./blocks/popup/_opened/popup_opened.css");
+@import url("./blocks/popup/__title/popup__title.css");
+@import url("./blocks/popup/__image-container/popup__image-container.css");
+@import url("./blocks/popup/__image-title/popup__image-title.css");
+@import url("./blocks/popup/__image/popup__image.css");
+
+@import url("./blocks/form/form.css");
+@import url("./blocks/form/__title/form__title.css");
+@import url("./blocks/form/__input/form__input.css");
+@import url("./blocks/form/__button/form__button.css");
+
+@import url("./blocks/form/form.css");
+@import url("./blocks/form/__title/form__title.css");
+@import url("./blocks/form/__title/_theme/form__title_theme_dark.css");
+@import url("./blocks/form/__title/_form-type/form__title_form-type_large.css");
+@import url("./blocks/form/__label/form__label.css");
+@import url("./blocks/form/__input/form__input.css");
+@import url("./blocks/form/__input/_theme/form__input_theme_dark.css");
+@import url("./blocks/form/__input/_type/form__input_type_error.css");
+@import url("./blocks/form/__input-error/form__input-error.css");
+@import url("./blocks/form/__input-error/_visible/form__input-error_visible.css");
+@import url("./blocks/form/__button/form__button.css");
+@import url("./blocks/form/__button/_theme/form__button_theme_dark.css");
+@import url("./blocks/form/__button/_form-type/form__button_form-type_large.css");
+@import url("./blocks/form/__button/_disabled/form__button_disabled.css");
+@import url("./blocks/form/__link/form__link.css");
+
+@import url("./blocks/infoTooltip/infoTooltip.css");
+
+@import url("./blocks/login/login.css");
+
+@import url("./blocks/register/register.css");
+
+@import url("./blocks/footer/footer.css");
+@import url("./blocks/footer/__copy/footer__copy.css");
+
+body {
+  background-color: #000000;
+  font-family: "Inter", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
