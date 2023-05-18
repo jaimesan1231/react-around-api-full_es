@@ -87,7 +87,7 @@ function App() {
   };
   const handleAppPlaceSubmit = ({ title, link }) => {
     api.postCard({ title, link }, token).then((newCard) => {
-      setCards([newCard.data, ...cards]);
+      setCards([ ...cards,newCard.data]);
     });
   };
 

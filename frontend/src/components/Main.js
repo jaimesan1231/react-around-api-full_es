@@ -37,7 +37,7 @@ const Main = ({
       </section>
       <section>
         <ul className="cards-container">
-          {cards && cards.map((card) => (
+          {cards && cards.slice().reverse().map((card) => (
             <Card
               card={card}
               key={card._id}
