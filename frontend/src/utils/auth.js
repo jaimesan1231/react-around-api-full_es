@@ -1,5 +1,5 @@
-// https://api.jaime.desarrollointerno.com
-export const BASE_URL = "http://localhost:5000";
+
+export const BASE_URL = "https://around-backend.onrender.com";
 
 export const register = (password, email) => {
   return fetch(`${BASE_URL}/signup`, {

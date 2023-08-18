@@ -158,7 +158,7 @@ class Api {
 }
 
 const api = new Api({
-  baseUrl: "http://localhost:5000",
+  baseUrl: "https://around-backend.onrender.com",
   headers: {
     "content-type": "application/json",
   },
