@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const userRoute = require('./routes/users');
@@ -6,12 +7,12 @@ const cors = require('cors');
 const { celebrate, Joi, errors  } = require('celebrate')
 const { login, createUser } = require('./controllers/users');
 const auth = require('./middlewares/auth');
-const { requestLogger, errorLogger } = require('./middlewares/logger'); 
+const { requestLogger, errorLogger } = require('./middlewares/logger');
 
 
 const app = express();
 
-mongoose.connect('mongodb://localhost:27017/aroundb');
+mongoose.connect(process.env.URI);
 app.use(express.json());
 
 app.use(cors());
@@ -23,7 +24,7 @@ app.get('/crash-test', () => {
   setTimeout(() => {
     throw new Error('El servidor va a caer');
   }, 0);
-}); 
+});
 
 app.post('/signin', celebrate({
   body: Joi.object().keys({
@@ -37,7 +38,7 @@ app.post('/signup', celebrate({
     password: Joi.string().required().min(8),
   }),
 }), createUser);
-app.use(auth);;
+app.use(auth);
 app.use('/users', userRoute);
 app.use('/cards', cardsRoute);
 
@@ -60,6 +61,6 @@ app.use((err, req, res, next) => {
   }
   console.log(err)
    res.status(500).send({message: 'Se ha producido un error en el servidor'});
- }); 
+ });
 
 app.listen(5000);
