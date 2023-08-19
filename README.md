@@ -24,5 +24,5 @@ Este repositorio contiene el frontend y el backend del proyecto "Around the U.S.
 ## Acceso a la Aplicación
 
 La aplicación se encuentra disponible en las siguientes URL:
-* Frontend: https://jaime.desarrollointerno.com/
-* Backend: https://api.jaime.desarrollointerno.com/.
+* Frontend: https://stirring-madeleine-ffb070.netlify.app/
+* Backend: https://around-backend.onrender.com/
